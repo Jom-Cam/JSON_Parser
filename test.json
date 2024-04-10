@@ -1,0 +1,7 @@
+{
+    "Name" : "string",
+    "Armor" : "Integer",
+    "Armor_Type" : ["Light", "Armoured"],
+    "Damage" : "Integer",
+    "isDead" : false 
+}
