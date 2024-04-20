@@ -28,5 +28,5 @@ except FileNotFoundError:
     print("File not found.")
     sys.exit(1)
 except: 
-    print("Invalid data set")
+    print("Invalid data sets")
     print("0")
