@@ -2,11 +2,10 @@ import sys
 
 holder = " "
 
-def index_char_check(self):
+def index_char_check(self, a):
     print(self)
-        
 
-
+# print(f'checking the argv data {sys.argv}')
 
 if len(sys.argv) != 2:
     print("Usage: python script.py <json_data>")

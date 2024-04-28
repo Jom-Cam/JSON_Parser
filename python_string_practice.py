@@ -34,16 +34,14 @@ test_string = "{this is a test string : for manipulation practice}"
 # toggle = index_check(test_string, '{')
 # print(toggle)
 
-test_string_2 = '{ b }   '
+test_string_2 = '{ "a" : "b"    ewewewe'
 holder = " "
 current_index = 0
 
 def index_check(string, x):  
-    for index in string: 
-        if index == x: 
-            return True
-        else: 
-           return False
+    if string[current_index] != x:
+        raise ValueError("Invalid JSON")
+    current_index += 1
 
 while current_index < len(test_string_2):
     try: 
@@ -54,7 +52,7 @@ while current_index < len(test_string_2):
             print('end JSON')
             break
        
-        print(current_index)
+        print(f'this is current index of {current_index} and a character of {test_string_2[current_index]}')
     except:
         print('excepted')
     # print(test_string_2[current_index])
